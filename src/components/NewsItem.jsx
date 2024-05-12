@@ -5,11 +5,11 @@ const NewsItem = ({ title, description, src, url }) => {
     <>
       <div
         className="card bg-dark text-light mb-3 d-inline-block my-3 mx-3 px-2 py-2"
-        style={{ maxWidth: "345px" }}
+        style={{ maxWidth: "300px" }}
       >
         <img
           src={src ? src : image}
-          style={{ height: "200px", width: "325px" }}
+          style={{ height: "200px", width: "283px" }}
           className="card-img-top"
           alt="..."
         />
@@ -20,7 +20,7 @@ const NewsItem = ({ title, description, src, url }) => {
               ? description.slice(0, 90)
               : "News is not there so it is a default message what you are viewing."}
           </p>
-          <a href={src} className="btn btn-primary">
+          <a href={url} className="btn btn-primary">
             Read More
           </a>
         </div>

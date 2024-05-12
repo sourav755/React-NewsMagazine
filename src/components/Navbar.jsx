@@ -9,17 +9,7 @@ const Navbar = ({ setCategory }) => {
           <a className="navbar-brand" href="#">
             <span className="badge bg-light text-dark fs-4">NewsBag</span>
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a
@@ -35,6 +25,9 @@ const Navbar = ({ setCategory }) => {
               </a>
               <a className="nav-link" onClick={() => setCategory("business")}>
                 Business
+              </a>
+              <a className="nav-link" onClick={() => setCategory("science")}>
+                Science
               </a>
               <a className="nav-link" onClick={() => setCategory("health")}>
                 Health
