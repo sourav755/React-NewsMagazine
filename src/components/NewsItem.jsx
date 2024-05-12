@@ -1,3 +1,5 @@
+import image from "../assets/NewsIcon.png";
+
 const NewsItem = ({ title, description, src, url }) => {
   return (
     <>
@@ -6,7 +8,7 @@ const NewsItem = ({ title, description, src, url }) => {
         style={{ maxWidth: "345px" }}
       >
         <img
-          src={src}
+          src={src ? src : image}
           style={{ height: "200px", width: "325px" }}
           className="card-img-top"
           alt="..."

@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ setCategory }) => {
   return (
     <>
       <nav
@@ -22,17 +22,31 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                // href="#"
+                onClick={() => setCategory("general")}
+              >
                 Home
               </a>
-              <a className="nav-link" href="#">
-                Features
+              <a className="nav-link" onClick={() => setCategory("technology")}>
+                Technology
               </a>
-              <a className="nav-link" href="#">
-                Pricing
+              <a className="nav-link" onClick={() => setCategory("business")}>
+                Business
               </a>
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
+              <a className="nav-link" onClick={() => setCategory("health")}>
+                Health
+              </a>
+              <a className="nav-link" onClick={() => setCategory("sports")}>
+                Sports
+              </a>
+              <a
+                className="nav-link"
+                onClick={() => setCategory("entertainment")}
+              >
+                Entertainment
               </a>
             </div>
           </div>
